@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash.
 # CTServ Git Bootcamp — sandbox driver
 # Usage:  ./bootcamp.sh start 1     build lab 1 and drop you in it
 #         ./bootcamp.sh rules 1     reprint lab 1's brief without rebuilding it
