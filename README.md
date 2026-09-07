@@ -8,6 +8,8 @@ touched, so break things freely — that is the point.
 
 **Everyone**, whatever machine you are on, runs the labs in **bash**.
 
+### 1. Download git
+
 
 | Machine | How to get a bash prompt                                                                                       |
 | ------- | -------------------------------------------------------------------------------------------------------------- |
@@ -15,6 +17,37 @@ touched, so break things freely — that is the point.
 | macOS   | Terminal. If `git --version` prompts you, accept the developer tools install.                                  |
 | Linux   | Terminal. `sudo apt install git` if needed.                                                                    |
 
+
+
+
+### 2. Create a GitHub Account & Setup SSH
+
+Using your work email, take 2 minutes to [create a github account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
+
+In Gitbash, generate an ssh key for your git account:
+
+```
+$ ssh-keygen -t ed25519 -f ~/.ssh/github-key -C "your_ctserv_email@example.com"
+$ clip < ~/.ssh/github-key.pub
+```
+
+Next, click on your **Profile (top-right) -> Settings -> SSH and GPG keys -> New SSH key**
+
+- Give it a name and paste the contents of `github-key.pub`
+
+
+
+### 3. Clone the repo
+
+in your directory, clone the bootcamp
+
+```
+git clone git@github.com:rawad663/git-bootcampt-sandbox.git
+```
+
+Open it in your favorite IDE and enjoy!!
+
+### 4. Running the bootcamp
 
 Then:
 
